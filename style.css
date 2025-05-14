@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header { 
+    background-color: #F5F5F5;
+    opacity: 0.95;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs {
+    margin-right: 20px;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+    a {
+        color: #6C839D;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+body {
+    background-color: white;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    background-color: #6C839D;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.mhead {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#name {
+    margin-left: 20px;
+}
+
+#fname {
+    color: black;
+}
+
+#lname {
+    color: grey;
+}
+
+/*
+#getInTouch {
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 24px;
+    padding: 5px 15px 10px;
+    text-decoration: none;
+    background-color: darkgrey;
+    color: white;
+    border: 2px solid darkgrey;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 20px;
+    float:inline-end;
+    transition: background-color 0.7s ease;
+}*/
+
+#getInTouch:hover {
+    background-color: white;
+    color: darkgrey
+}
+
+main {
+    margin-left: 40px;
+
+    .separator {
+        margin-left: -20px;
+        margin-top: 50px;
+    }
+}
+
+.intro-section {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: auto;
+}
+
+.intro {
+    margin-top: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#l1 {
+    color: grey;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#des {
+    font-size: 20px;
+}
+
+.break {
+    flex-basis: 100%;
+}
+
+.hyperButtons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 95%;
+    justify-content: left;
+}
+
+.hyperBut {
+    align-items: left;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: none;
+    outline: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6C839D;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #6C839D;
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+    transition: background-color 0.5s ease-in;
+}
+
+.hyperBut:hover {
+    background-color: #6C839D;
+    color: white;
+}
+
+.tech_Stack {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+
+    ul {
+        list-style: none;
+        padding-left: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 40px;
+    }
+
+    ul li {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+        padding: 5px;
+    }
+
+    ul li::before {
+        content: '#';
+        font-weight: bolder;
+        margin-right: 0.1em;
+    }
+}
+
+#subHead {
+    color: #6C839D;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subList {
+    margin-top: 50px;
+    margin-left: 20px;
+    ul {
+        color: #3A4454;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 800px) {
+    .header {
+        margin-left: 0px;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+    }
+
+    .mhead {
+        font-size: 30px;
+    }
+
+    .intro-section {
+        margin-top: 30%;
+        justify-content: space-evenly;
+    }
+
+    .hyperButtons {
+        margin-top: 40px;
+        align-items: center;
+    }
+
+    .tech_Stack {
+        ul {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+
+    .subList {
+        ul {
+            flex-direction: column;
+        }
+    }
+}
