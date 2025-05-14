@@ -244,6 +244,53 @@ footer {
     }
 
     .intro-section {
+        margin-top: 20%;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    .hyperButtons {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .tech_Stack {
+        ul {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+
+    .subList {
+        ul {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    }
+
+    #langList {
+        row-gap: 20px;
+    }
+
+    #devBoardList {
+        row-gap: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        margin-left: 0px;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+    }
+
+    .mhead {
+        font-size: 40px;
+    }
+
+    .intro-section {
         margin-top: 30%;
         flex-direction: column;
         row-gap: 20px;
