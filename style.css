@@ -238,13 +238,9 @@ footer {
         row-gap: 20px;
         justify-content: center;
     }
-
-    .mhead {
-        font-size: 40px;
-    }
-
+    
     .intro-section {
-        margin-top: 20%;
+        margin-top: 15%;
         flex-direction: column;
         row-gap: 20px;
         justify-content: space-evenly;
