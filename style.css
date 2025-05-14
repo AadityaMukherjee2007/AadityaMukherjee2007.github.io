@@ -244,7 +244,7 @@ footer {
     }
 
     .intro-section {
-        margin-top: 25%;
+        margin-top: 30%;
         flex-direction: column;
         row-gap: 20px;
         justify-content: space-evenly;
@@ -264,6 +264,15 @@ footer {
     .subList {
         ul {
             flex-direction: column;
+            row-gap: 10px;
         }
+    }
+
+    #langList {
+        row-gap: 20px;
+    }
+
+    #devBoardList {
+        row-gap: 0px;
     }
 }
