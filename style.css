@@ -224,16 +224,18 @@ main {
     }
 
     .mhead {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .intro-section {
-        margin-top: 30%;
+        margin-top: 20%;
+        flex-direction: column;
+        row-gap: 30px;
         justify-content: space-evenly;
     }
 
     .hyperButtons {
-        margin-top: 40px;
+        margin-top: 20px;
         align-items: center;
     }
 
