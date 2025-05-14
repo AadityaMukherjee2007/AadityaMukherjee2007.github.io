@@ -363,7 +363,8 @@ footer {
     }
 
     .tabs {
-        column-gap: 25px;
+        column-gap: 18px;
+        text-wrap: wrap;
     }
 
     .mhead {
