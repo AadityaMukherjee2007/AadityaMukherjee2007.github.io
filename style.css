@@ -179,7 +179,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        column-gap: 40px;
+        column-gap: 20px;
     }
 
     ul li {
@@ -206,7 +206,7 @@ main {
 }
 
 .subList {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 20px;
     ul {
         color: #3A4454;
