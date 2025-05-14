@@ -239,6 +239,10 @@ footer {
         justify-content: center;
     }
 
+    .tabs {
+        gap: 50px;
+    }
+
     .intro-section {
         margin-top: 18%;
         flex-direction: column;
