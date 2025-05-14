@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header { 
     background-color: #F5F5F5;
     opacity: 0.95;
