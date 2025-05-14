@@ -279,7 +279,7 @@ footer {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 520px) {
     .header {
         margin-left: 0px;
         flex-direction: column;
@@ -288,8 +288,7 @@ footer {
     }
 
     .tabs {
-        justify-content: ;
-        column-gap: 10px;
+        column-gap: 25px;
     }
 
     .mhead {
