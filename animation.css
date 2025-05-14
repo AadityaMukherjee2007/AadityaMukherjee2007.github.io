@@ -60,12 +60,6 @@
     background-color: #BE6C77;
 }
 
-@media (max-width:800px) {
-  .screen {
-    font-size: 12px;
-  }
-}
-
 @keyframes appear {
   from {
     opacity: 0;
@@ -77,14 +71,36 @@
   }
 }
 
-.comp, .hyperButtons, .tech_Stack, .subList {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
+@media (max-width:850px) {
+  .screen {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:520px) {
+  .screen {
+    font-size: 12px;
+  }
+
+  @media (max-height:1280px) {
+    .subList {
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+  }
+
+  @media (max-height:800px) {
+    .tech_Stack, .subList {
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+  }
 }
 
 footer {
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 10%;
+  animation-range: entry 0% cover 5%;
 }
