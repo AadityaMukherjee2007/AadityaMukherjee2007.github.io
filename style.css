@@ -363,6 +363,7 @@ footer {
     }
 
     .tabs {
+        font-size: medium;
         column-gap: 15px;
         text-wrap: wrap;
     }
