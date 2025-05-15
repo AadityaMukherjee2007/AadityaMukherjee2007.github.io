@@ -8,7 +8,7 @@
 
 .panel {
     padding: 5px;
-    background-color: #BE6C77;
+    background-color: #5c77ff;
     width: auto;
     height: auto;
 }
@@ -36,6 +36,19 @@
   animation: typingLoop 7s steps(27) infinite, blink 0.7s step-end infinite;
 }
 
+.stand {
+    justify-content: center;
+    padding-right: 20px;
+    padding-top: 40px;
+    background-color: #5c77ff;
+}
+
+.base {
+    padding-right: 60px;
+    padding-top: 10px;
+    background-color: #5c77ff;
+}
+
 @keyframes typingLoop {
   0% { width: 0ch; }
   40% { width: 28ch; }
@@ -45,19 +58,6 @@
 
 @keyframes blink {
   50% { border-color: transparent; }
-}
-
-.stand {
-    justify-content: center;
-    padding-right: 20px;
-    padding-top: 40px;
-    background-color: #BE6C77;
-}
-
-.base {
-    padding-right: 60px;
-    padding-top: 10px;
-    background-color: #BE6C77;
 }
 
 @keyframes clearIn {
