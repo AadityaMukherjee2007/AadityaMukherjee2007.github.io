@@ -17,15 +17,15 @@
             <div class="tabs">
                 <a href="">About Me</a>
                 <a href="">Academics</a>
-                <a href="#contact">Contact</a>
                 <a href="">Extra curricular</a>
+                <a href="#GetInTouch">Contact</a>
             </div>
         </header>
 
         <main>
             <section class="intro-section">
                 <div class="intro">
-                    <div class="l1">Hi, I'm <span style="color: #3A4454;">Aaditya.</span></div>
+                    <div id="aboutMe" class="l1">Hi, I'm <span style="color: #3A4454;">Aaditya.</span></div>
                     <p class="des">
                         I design and build smart systems <br> that solve real-world problems
                         blending<br> Python, automation, and bold ideas to<br> bring efficiency and innovation to life.<br>
@@ -77,42 +77,43 @@
             </section>
         </main>
 
-        <section class="Contact">
-            <div class="getInTouch_desp">
-                <h1 class="l1">Get In Touch</h1>
-                <p class="des">I'm always open to discussing new projects, <br>creative ideas, or opportunities to be part of your<br> vision. Feel free to reach out using the form or <br>through my social media.</p>
-                <div id="location">
-                    <img src="imgs/map-marker.svg" height="30">
-                    <div>Kolkata, India</div>
+        <footer id="GetInTouch">
+            <section class="Contact">
+                <div class="getInTouch_desp">
+                    <h1 class="l1">Get In Touch</h1>
+                    <p class="des">I'm always open to discussing new projects, <br>creative ideas, or opportunities to be part of your<br> vision. Feel free to reach out using the form or <br>through my social media.</p>
+                    <div id="location">
+                        <img src="imgs/map-marker.svg" height="30">
+                        <div>Kolkata, India</div>
+                    </div>
                 </div>
+                <form 
+                    class="getInTouch"
+                    action="https://formspree.io/f/xbloqypo"
+                    method="POST"
+                    >
+                    <div>
+                        <div id="label">Name</div>
+                        <input class="inpBox" type="text" name="name" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <div id="label">Email</div>
+                        <input class="inpBox" type="text" name="email" placeholder="Your Email">
+                    </div>
+                    <div>
+                        <div id="label">Message</div>
+                        <textarea class="inpBox" id="messageBox" name="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <input type="submit" value="Send Message">
+                </form>
+            </section>
+            
+            <div id="contact">
+                <a href="mailto:aaditya.prof2025@gmail.com"><img src="imgs/envelope.svg" height="30"></a>
+                <a href="tel:+917003365159"><img src="imgs/phone-call.svg" height="30"></a>
+                <a href="https://github.com/AadityaMukherjee2007"><img src="imgs/github.svg" height="30"></a>
+                <a href="https://www.linkedin.com/in/aaditya-mukherjee-4490182b7/"><img src="imgs/linkedin.svg" height="30"></a>
             </div>
-            <form 
-                class="getInTouch"
-                action="https://formspree.io/f/xbloqypo"
-                method="POST"
-                >
-                <div>
-                    <div id="label">Name</div>
-                    <input class="inpBox" type="text" name="name" placeholder="Your Name">
-                </div>
-                <div>
-                    <div id="label">Email</div>
-                    <input class="inpBox" type="text" name="email" placeholder="Your Email">
-                </div>
-                <div>
-                    <div id="label">Message</div>
-                    <!--<input class="inpBox" id="messageBox" type="text" autocomplete="off" placeholder="Your Message">-->
-                    <textarea class="inpBox" id="messageBox" name="message" placeholder="Your Meassage"></textarea>
-                </div>
-                <input type="submit" value="Send Message">
-            </form>
-        </section>
-        
-        <footer id="contact">
-            <a href="mailto:aaditya.prof2025@gmail.com"><img src="imgs/envelope.svg" height="30"></a>
-            <a href="tel:+917003365159"><img src="imgs/phone-call.svg" height="30"></a>
-            <a href="https://github.com/AadityaMukherjee2007"><img src="imgs/github.svg" height="30"></a>
-            <a href="https://www.linkedin.com/in/aaditya-mukherjee-4490182b7/"><img src="imgs/linkedin.svg" height="30"></a>
         </footer>
     </body>
 </html>
