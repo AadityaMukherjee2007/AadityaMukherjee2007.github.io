@@ -108,14 +108,13 @@
 }
 
 @media (max-width: 499px) {
-  .skillSet_lang {
+  .skillSet_lang, .card-container .edu-card:nth-child(even) {
     animation: rToL 1s ease-out forwards;
     animation-timeline: view();
     animation-range: entry 10px cover 50%;
   }
 
-  .hyperButtons,
-  .skillSet_boards {
+  .hyperButtons, .skillSet_boards, .card-container .edu-card:nth-child(odd) {
     animation: lToR 1s ease-out forwards;
     animation-timeline: view();
     animation-range: entry 10px cover 50%;
@@ -127,13 +126,13 @@
     transform: scale(1.35);
   }
 
-  .skillSet_lang {
+  .skillSet_lang, .card-container .edu-card:nth-child(even) {
     animation: rToL 1s ease-out forwards;
     animation-timeline: view();
     animation-range: entry 10px cover 50%;
   }
 
-  .skillSet_boards {
+  .skillSet_boards, .card-container .edu-card:nth-child(odd) {
     animation: lToR 1s ease-out forwards;
     animation-timeline: view();
     animation-range: entry 10px cover 50%;
