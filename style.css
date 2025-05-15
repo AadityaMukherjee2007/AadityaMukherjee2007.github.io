@@ -120,7 +120,7 @@ main {
     margin-bottom: 40px;
 }
 
-#l1 {
+.l1 {
     color: grey;
     font-size: 40px;
     font-weight: bold;
@@ -128,7 +128,7 @@ main {
     margin-bottom: 20px;
 }
 
-#des {
+.des {
     font-size: 20px;
 }
 
@@ -241,7 +241,6 @@ footer {
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
     width: 100vw;
     height: 80px;
-    margin-top: 40px;
     padding: 10px;
     text-align: center;
     display: flex;
@@ -255,16 +254,48 @@ footer {
     }
 }
 
+.Contact {
+    background-color: #eceaea;
+    width: 100%;
+    height: 450px;
+    margin-top: 50px;
+    padding: ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.getInTouch_desp {
+    margin-top: 30px;
+    margin-left: 40px;
+
+    h1 {
+        font-size: 60px;
+    }
+}
+
+#location {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    div {
+        font-weight: 600;
+    }
+}
+
 .getInTouch {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    row-gap: 15px;
+    row-gap: 30px;
     align-items: center;
     margin-top: 40px;
+    margin-right: 100px;
 
     #label {
-            font-size: 25px;
+        font-size: 25px;
         color:#3A4454;
     }
 
@@ -274,7 +305,7 @@ footer {
         border-radius: 5px;
         border-style: solid;
         padding: 5px;
-            font-size: 15px;
+        font-size: 15px;
         color:#3A4454;
     }
 
