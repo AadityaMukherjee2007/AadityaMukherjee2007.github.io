@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .header { 
@@ -27,7 +28,6 @@ html {
 .tabs {
     margin-right: 20px;
     font-size: large;
-    font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -118,7 +118,6 @@ main {
 .intro {
     margin-top: 40px;
     margin-bottom: 40px;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 #l1 {
@@ -157,7 +156,6 @@ main {
     border-style: solid;
     border-color: #6C839D;
     border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     color: #6C839D;
     background-color: white;
@@ -173,35 +171,10 @@ main {
 
 .tech_Stack {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: wrap;            
     flex-direction: column;
-
-    ul {
-        list-style: none;
-        padding-left: 1em;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        column-gap: 20px;
-    }
-
-    ul li {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        gap: 10px;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: large;
-        padding: 5px;
-    }
-
-    ul li::before {
-        content: '#';
-        font-weight: bolder;
-        margin-right: 0.1em;
-    }
 }
 
 #subHead {
@@ -210,14 +183,54 @@ main {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.subList {
-    margin-top: 30px;
-    margin-left: 20px;
-    ul {
-        color: #3A4454;
+.skillSet_lang {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+
+    div {
+        box-shadow: 0px 2px 5px 2px grey;
+        border-radius: 5px;
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        height: 60px;
+        width: auto;
+    }
+
+    div:hover {
+        box-shadow: -2px 5px 5px 3px grey;
+    }
+}
+
+.skillSet_boards {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+
+    div {
+        box-shadow: 0px 0px 5px 2px grey;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        height: 80px;
+        width: auto;
+    }
+
+    div:hover {
+        box-shadow: -2px 5px 5px 3px grey;
     }
 }
 
@@ -249,8 +262,7 @@ footer {
     margin-top: 40px;
 
     #label {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 25px;
+            font-size: 25px;
         color:#3A4454;
     }
 
@@ -260,9 +272,12 @@ footer {
         border-radius: 5px;
         border-style: solid;
         padding: 5px;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 15px;
+            font-size: 15px;
         color:#3A4454;
+    }
+
+    .inpBox:hover {
+        border-color: #3A4454;
     }
 
     #messageBox {
@@ -330,28 +345,6 @@ footer {
         align-items: center;
         justify-content: space-evenly;
     }
-
-    .tech_Stack {
-        ul {
-            flex-direction: column;
-            row-gap: 20px;
-        }
-    }
-
-    .subList {
-        ul {
-            flex-direction: column;
-            row-gap: 10px;
-        }
-    }
-
-    #langList {
-        row-gap: 20px;
-    }
-
-    #devBoardList {
-        row-gap: 0px;
-    }
 }
 
 @media (max-width: 499px) {
@@ -381,27 +374,5 @@ footer {
 
     .hyperButtons {
         align-items: center;
-    }
-
-    .tech_Stack {
-        ul {
-            flex-direction: column;
-            row-gap: 20px;
-        }
-    }
-
-    .subList {
-        ul {
-            flex-direction: column;
-            row-gap: 10px;
-        }
-    }
-
-    #langList {
-        row-gap: 20px;
-    }
-
-    #devBoardList {
-        row-gap: 0px;
     }
 }

@@ -82,49 +82,58 @@
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
-
 
 @keyframes lToR {
-  from {
+  0% {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateX(-80px);
   }
-  to {
+  60% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
-
-@media (max-width:499px) {
-
-  .subList {
-    animation: rToL linear;
+@media (max-width: 499px) {
+  .skillSet_lang {
+    animation: rToL 1s ease-out forwards;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 10px cover 50%;
   }
 
-  .hyperButtons {
-    animation: lToR linear;
+  .hyperButtons,
+  .skillSet_boards {
+    animation: lToR 1s ease-out forwards;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 10px cover 50%;
   }
 }
 
-@media (max-width: 899px) and (min-height:1100px) {
+@media (max-width: 899px) and (min-height: 1100px) {
   .comp {
     transform: scale(1.35);
   }
 
-  .subList {
+  .skillSet_lang {
     animation: rToL 1s ease-out forwards;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 10px cover 50%;
+  }
+
+  .skillSet_boards {
+    animation: lToR 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 10px cover 50%;
   }
 }
+
 
 .header {
   opacity: 0;
@@ -141,5 +150,5 @@
 footer {
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 5%;
+  animation-range: entry 10px cover 50%;
 }
