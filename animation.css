@@ -42,17 +42,6 @@
   animation: typingLoop 7s steps(27) infinite, blink 0.7s step-end infinite;
 }
 
-@keyframes typingLoop {
-  0% { width: 0ch; }
-  40% { width: 28ch; }
-  60% { width: 28ch; }
-  100% { width: 0ch; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
 .stand {
     justify-content: center;
     padding-right: 20px;
@@ -64,6 +53,17 @@
     padding-right: 60px;
     padding-top: 10px;
     background-color: #BE6C77;
+}
+
+@keyframes typingLoop {
+  0% { width: 0ch; }
+  40% { width: 28ch; }
+  60% { width: 28ch; }
+  100% { width: 0ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
 }
 
 @keyframes clearIn {
