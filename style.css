@@ -7,7 +7,14 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 40vw;
+  /*scroll-padding-top: 10vw;*/
+  #academic {
+    scroll-margin-top: 10vw;
+  }
+
+  #GetInTouch{
+    scroll-margin-top: 0;
+  }
   font-family: 'Courier New', Courier, monospace;
 }
 
