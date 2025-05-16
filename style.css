@@ -331,11 +331,13 @@ main {
     align-items: center;
     gap: 10px;
 
-    div {
+    a {text-decoration: none;}
+
+    a div {
         font-weight: 600;
     }
 
-    img:hover {
+    a img:hover {
         transform: translateY(-5px);
     }
 }
