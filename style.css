@@ -536,4 +536,13 @@ footer {
             font-size: 35px;
         }
     }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .edu-card {
+        flex: 1 0;
+        margin-right: 10%;
+    }
 }
