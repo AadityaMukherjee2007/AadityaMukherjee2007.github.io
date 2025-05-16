@@ -545,4 +545,10 @@ footer {
         flex: 1 0;
         margin-right: 10%;
     }
+
+    html {
+        #academic {
+            scroll-margin-top: 35vw;
+        } 
+    }
 }
