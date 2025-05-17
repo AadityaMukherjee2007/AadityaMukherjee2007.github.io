@@ -6,22 +6,12 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  /*scroll-padding-top: 10vw;*/
-
-    #aboutMe {
+    scroll-behavior: smooth;
+    #aboutMe, #academic, #extracurricular, #TechStackSec {
         scroll-margin-top: 10vw;
     }
 
-    #academic {
-        scroll-margin-top: 10vw;
-    }
-
-    #TechStackSec {
-        scroll-margin-top: 10vw;
-    }
-
-    #GetInTouch{
+    #GetInTouch {
         scroll-margin-top: 0;
     }
     font-family: 'Courier New', Courier, monospace;
@@ -236,41 +226,10 @@ main {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.skillSet_lang {
+.skills{
     margin-left: 10px;
     margin-right: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    gap: 20px;
-
-    div {
-        background-color: white;
-        color: #6C839D;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        padding: 10px;
-        height: 60px;
-        width: auto;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    div:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-    }
-}
-
-.skillSet_boards {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
