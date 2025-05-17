@@ -108,13 +108,13 @@
 }
 
 @media (max-width: 499px) {
-  .skillSet_lang, .card-container .edu-card:nth-child(even) {
+  .skills:nth-child(even), .card-container .edu-card:nth-child(even) {
     animation: rToL 1s ease-out forwards;
     animation-timeline: view();
     animation-range: entry 10px cover 60%;
   }
 
-  .hyperButtons, .skillSet_boards, .card-container .edu-card:nth-child(odd) {
+  .hyperButtons, .skills:nth-child(odd), .card-container .edu-card:nth-child(odd) {
     animation: lToR 1s ease-out forwards;
     animation-timeline: view();
     animation-range: entry 10px cover 60%;
@@ -126,13 +126,13 @@
     transform: scale(1.35);
   }
 
-  .skillSet_lang, .card-container .edu-card:nth-child(even) {
+  .skills:nth-child(even), .card-container .edu-card:nth-child(even) {
     animation: rToL 1s ease-out forwards;
     animation-timeline: view();
     animation-range: entry 10px cover 60%;
   }
 
-  .skillSet_boards, .card-container .edu-card:nth-child(odd) {
+  .skill:nth-child(odd), .card-container .edu-card:nth-child(odd) {
     animation: lToR 1s ease-out forwards;
     animation-timeline: view();
     animation-range: entry 10px cover 60%;
