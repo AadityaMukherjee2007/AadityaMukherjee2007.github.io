@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-    #aboutMe, #academic, #extracurricular, #TechStackSec {
+    #aboutMe, #projects, #academic, #extracurricular, #TechStackSec {
         scroll-margin-top: 10vw;
     }
 
@@ -166,7 +166,41 @@ main {
 
 
 
-/* academics section*/
+/* projects section */
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    h2 {
+        text-align: center;
+    }
+}
+
+.project-card {
+    flex: 0 0 400px;
+    background-color: #f9f9f99a;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    video {
+        border-radius: 12px;
+        width: 100%;
+    }
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+}
+
+
+
+
+/* academics section */
 
 .card-container {
     display: flex;

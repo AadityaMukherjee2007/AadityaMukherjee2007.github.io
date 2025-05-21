@@ -107,6 +107,18 @@
   }
 }
 
+skills:nth-child(even), .card-container .edu-card:nth-child(even) {
+    animation: rToL 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 10px cover 70%;
+}
+
+.skills:nth-child(odd), .card-container .edu-card:nth-child(odd) {
+    animation: lToR 1s ease-out forwards;
+    animation-timeline: view();
+    animation-range: entry 10px cover 70%;
+}
+
 @media (max-width: 499px) {
   .skills:nth-child(even), .card-container .edu-card:nth-child(even) {
     animation: rToL 1s ease-out forwards;
@@ -132,7 +144,7 @@
     animation-range: entry 10px cover 60%;
   }
 
-  .skill:nth-child(odd), .card-container .edu-card:nth-child(odd) {
+  .skills:nth-child(odd), .card-container .edu-card:nth-child(odd) {
     animation: lToR 1s ease-out forwards;
     animation-timeline: view();
     animation-range: entry 10px cover 60%;
