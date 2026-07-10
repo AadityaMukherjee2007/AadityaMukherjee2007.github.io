@@ -259,6 +259,46 @@ main {
         height: auto;
         aspect-ratio: 370 / 200;
     }
+
+    .project-thumb {
+        position: relative;
+        display: block;
+        border-radius: 8px;
+        overflow: hidden;
+        aspect-ratio: 370 / 200;
+        background: #000;
+    }
+
+    .project-thumb img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: opacity 0.3s;
+    }
+
+    .project-thumb:hover img {
+        opacity: 0.75;
+    }
+
+    .project-thumb::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        background: rgba(0,0,0,0.7) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3C/svg%3E") center/30px no-repeat;
+        border-radius: 50%;
+        pointer-events: none;
+        transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .project-thumb:hover::after {
+        transform: translate(-50%, -50%) scale(1.1);
+        background-color: rgba(255,0,0,0.8);
+    }
 }
 
 .project-card:hover {
